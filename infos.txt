@@ -1,0 +1,21 @@
+objeto: cachorro
+função ou evento/método: latir, correr, lamber (realiza alguma ação de acordo com os objetos)
+propriedades/atributos: pelo, rabo, focinho, pata (descreve o objeto)
+
+cachorro.late(alto);
+cachorro.corre(rápido);
+cachorro.lambe(muito, molhado);
+
+Colocar na tag <script></script> apenas objetos javascript
+
+Se for colocar tags html, colocar dentro do <body></body>
+
+tipos de dados
+
+Inteiros (números positivos/negativos) - integer
+Decimais 
+Strings (texto) - dado do tipo texto entre aspas "" (pode escrever o que quiser, com caractere especial e tal);
+Arrays (conjuntos) ["pera", "maçã", "laranja"] conjunto de valores strings. Índices apontam em qual posição cada string está posicionadado. A cada vírgula um índice. Começa a contar a partir do zero (O).
+Objetos
+Booleano - retorna dois valores: falso e verdadeiro. Quando preenche, por ex, um formulário o "sim ou não" se tornam "true or false".
+

@@ -48,11 +48,12 @@ table {
 }
 
 body {
-  font-family: helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1em;
-  background-color: #b6c1ff;
+  background-color: #d9d9d9;
   margin: 0;
   width: 100%;
+	line-height: 1.4em;
 }
 
 header {
@@ -60,7 +61,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #233051;
+  background-color: #213471;
   padding: 0;
 	z-index: 1;
 }
@@ -78,7 +79,7 @@ nav {
 
 .submenu li {
 	display: block;
-  background-color: #233051;
+  background-color: #213471;
   top: 0;
   left: 0;
   text-align: left;
@@ -89,9 +90,8 @@ nav {
 	position: absolute;
 	top: 1.5em;
   left: 0;
-	background-color: #233051;
+	background-color: #213471;
 	padding: 1em 0 0 0;
-
 
 }
 
@@ -122,38 +122,50 @@ nav a:first-child {
 
 img.logo-site {
   width: 100%;
-  padding-top: 3em;
+  padding-top: 4em;
 
 }
 
 img.image-post {
   width: 100%;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 	display: block;
 
 }
 
-img.image-ads {
-  width: 100%;
-  display: block;
+.image-resenha {
+	width: 45%;
+	flex: 0 100%;
+	 display: inline-flex;
+	 flex-flow: row;
+	 justify-content: center;
+	 align-content: flex-start;
+	 padding-left: 1em;
+	 padding-right: 1em;
+	 padding-bottom: 1.5em;
+	 padding-top: 1.5em;
+	 margin: 0;
+	 list-style: none;
 }
 
 article {
 	top: 0;
 	left: 0;
-  padding: 2em;
+  padding: 2em 4em 2em 4em;
   display: flex;
   justify-content: space-between;
 }
 
 .content {
-  width: 60%;
+  width: 65%;
   background-color: white;
   display: -webkit-flex;
   display: flex;
-  padding: 1.5em;
+  padding: 2.5em;
   -webkit-flex-flow: column;
   flex-flow: column;
+	box-sizing: border-box;
+
 }
 
 .ads {
@@ -161,21 +173,27 @@ article {
   background-color: white;
   display: -webkit-flex;
   display: flex;
-  padding: 1.5em;
+  padding: 2.5em;
   -webkit-flex-flow: column;
   flex-flow: column;
+	box-sizing: border-box;
+	align-items: center;
 
 }
 
 h1 {
   font-size: 2em;
   padding-top: 0;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.3em;
+	font-weight: bolder;
+	color: #182654;
+	line-height: 1.1em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding-bottom: 0.5em;
+	padding-top: 0.5em;
 }
 
 h3 {
@@ -183,8 +201,17 @@ h3 {
   padding-bottom: 1em;
 }
 
+hr {
+	color: #d9d9d9;
+	background-color: #d9d9d9;
+  height: 0.2em;
+	width: 100%;
+	text-align: center;
+	border: 0;
+}
+
 p {
-  padding-bottom: 0.8em;
+  padding-bottom: 1em;
 }
 
 b {
@@ -196,13 +223,178 @@ i {
 }
 
 form {
-    margin: 0 auto;
-    width: 400px;
-    padding: 1em;
+    width: 100%;
+		margin-top: 1em;
+    padding: 2em 0 2em 2em;
     border: 1px solid #CCC;
     border-radius: 1em;
+		box-sizing: border-box;
 }
 
 form div + div {
-    margin-top: 1em;
+    margin-top: 2em;
+}
+
+footer {
+	background-color: #213471;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1em 6em 1em 6em;
+	box-sizing: border-box;
+}
+
+.container {
+	text-align: left;
+	display: inline-flex;
+
+}
+
+.container h5 {
+	color: white;
+	font-size: 0.8em;
+	padding-right: 1em;
+}
+
+.container h6 {
+	color: white;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.social li a {
+	display: inline-flex;
+	list-style: none;
+	color: white;
+	font-size: 0.8em;
+}
+
+.img-footer {
+	height: 3.5em;
+	border-radius: 50%
+}
+
+.link-footer {
+	  color: white;
+	  text-decoration: underline;
+	  transition: color ease 0.3s;
+	  line-height: 1em;
+	  width: 100%;
+}
+
+.ads h1 {
+	font-family: 'Lobster', cursive;
+	padding-bottom: 0.5em;
+	padding-top: 0.7em;
+	color: #182654;
+	line-height: 1.2em;
+}
+
+section .round {
+	width: 80%;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-flow: column;
+}
+
+.round {
+	border-radius: 50%;
+	overflow: hidden;
+	display: block;
+
+}
+
+.ads h5 {
+	font-size: 0.8em;
+	text-align: center;
+	padding-top: 0;
+	color: #182654;
+}
+
+.img-center-ads {
+	width: 100%;
+	text-align: center;
+	padding-left: 3.1em;
+	padding-top: 1em;
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+		h1 {
+			font-size: 1.2em;
+
+		}
+			h2 {
+				font-size: 0.8em;
+		}
+		h3 {
+			font-size: 0.7em;
+	}
+		p {
+        font-size: 12px;
+    }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+		h1 {
+			font-size: 1.5em;
+		}
+		h2 {
+			font-size: 1em;
+	}
+		h3 {
+			font-size: 0.8em;
+	}
+		p {
+        font-size: 14px;
+    }
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	h2 {
+		font-size: 1em;
+	}
+	h3 {
+		font-size: 0.8em;
+	}
+		p {
+        font-size: 14px;
+    }
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+		h1 {
+			font-size: 1.1em;
+		}
+		h2 {
+			font-size: 0.8em;
+	}
+		h3 {
+			font-size: 0.7em;
+	}
+		p {
+        font-size: 11px;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+		h1 {
+			font-size: 1.1em;
+		}
+		h2 {
+			font-size: 0.8em;
+	}
+		h3 {
+			font-size: 0.7em;
+		}
+		p {
+        font-size: 11px;
+    }
 }

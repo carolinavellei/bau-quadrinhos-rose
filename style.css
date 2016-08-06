@@ -135,17 +135,8 @@ img.image-post {
 
 .image-resenha {
 	width: 45%;
-	flex: 0 100%;
-	 display: inline-flex;
-	 flex-flow: row;
-	 justify-content: center;
-	 align-content: flex-start;
-	 padding-left: 1em;
-	 padding-right: 1em;
-	 padding-bottom: 1.5em;
-	 padding-top: 1.5em;
-	 margin: 0;
-	 list-style: none;
+	display: inline-flex;
+	padding: 1.5em 1em 1.5em 1em;
 }
 
 article {
@@ -159,10 +150,8 @@ article {
 .content {
   width: 65%;
   background-color: white;
-  display: -webkit-flex;
   display: flex;
   padding: 2.5em;
-  -webkit-flex-flow: column;
   flex-flow: column;
 	box-sizing: border-box;
 
@@ -284,6 +273,7 @@ footer {
 
 .ads h1 {
 	font-family: 'Lobster', cursive;
+	font-size: 1.9em;
 	padding-bottom: 0.5em;
 	padding-top: 0.7em;
 	color: #182654;
@@ -295,8 +285,10 @@ section .round {
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
-	display: flex;
+	display: block;
 	flex-flow: column;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .round {
@@ -316,7 +308,6 @@ section .round {
 .img-center-ads {
 	width: 100%;
 	text-align: center;
-	padding-left: 3.1em;
 	padding-top: 1em;
 }
 
@@ -324,7 +315,9 @@ section .round {
 @media only screen and (max-width: 959px) {
 		h1 {
 			font-size: 1.2em;
-
+		}
+		.ads h1 {
+			font-size: 1.1em;
 		}
 			h2 {
 				font-size: 0.8em;
@@ -342,6 +335,9 @@ section .round {
 		h1 {
 			font-size: 1.5em;
 		}
+		.ads h1 {
+			font-size: 1.1em;
+		}
 		h2 {
 			font-size: 1em;
 	}
@@ -357,6 +353,10 @@ section .round {
 	h1 {
 		font-size: 1.5em;
 	}
+	.ads h1 {
+		font-size: 1.1em;
+	}
+
 	h2 {
 		font-size: 1em;
 	}
@@ -372,6 +372,9 @@ section .round {
 		h1 {
 			font-size: 1.1em;
 		}
+		.ads h1 {
+			font-size: 1.1em;
+		}
 		h2 {
 			font-size: 0.8em;
 	}
@@ -385,6 +388,10 @@ section .round {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+		.ads h1 {
+			font-size: 1.1em;
+		}
+
 		h1 {
 			font-size: 1.1em;
 		}
